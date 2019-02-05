@@ -16,6 +16,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "description": "A fun way to estimate agile cards as a team",
+  "main": "src/index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriciaBradford/pat-pointing-poker"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
