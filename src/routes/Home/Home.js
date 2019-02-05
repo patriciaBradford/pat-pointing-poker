@@ -57,7 +57,7 @@ class Home extends React.Component {
           type="text"
           value={this.state.sessionName}
           onChange={this._sessionNameChange}
-          placeholder="supercalifragilisticexpialidocious"
+          placeholder="enter a name for your session e.g.elaboration-07Feb19"
         />
 
         <label className="Home-label">User name</label>
@@ -65,7 +65,7 @@ class Home extends React.Component {
           type="text"
           value={this.state.userName}
           onChange={this._userNameChange}
-          placeholder="Chim_chim_cher-ee"
+          placeholder="enter_your_name_no_spaces"
         />
 
         <label className="Home-label">User type</label>
