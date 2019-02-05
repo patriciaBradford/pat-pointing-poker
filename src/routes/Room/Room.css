@@ -1,0 +1,155 @@
+.Room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .Room-container {
+    display: block;
+  }
+}
+
+.Room-userContainer,
+.Room-scoresContainer {
+  width: 390px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.Room-heading {
+  margin: 20px;
+}
+
+.Room-pointButton {
+  display: inline-block;
+  vertical-align: top;
+  width: 16.66666666666666666667%;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 15px;
+}
+
+.Room-userList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Room-userListItem {
+  padding: 10px;
+  border-bottom: 1px solid;
+  position: relative;
+  cursor: default;
+}
+
+.Room-userListItemNameContainer {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  width: calc(100% - 50px);
+}
+
+.Room-userListItemScoreContainer {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 50px;
+}
+
+.Room-hiddenScore {
+  background: #000000;
+  text-align: center;
+}
+
+.Room-hiddenScore::after {
+  content: ".";
+  color: #000000;
+}
+
+.Room-hiddenScore.decided::after {
+  content: "\2713";
+  color: #ffffff;
+}
+
+.Room-removeUserLabel {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Room-changeNameBtn {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.Room-scoresActionBtn {
+  font-size: 15px;
+  width: 48%%;
+  margin-right: 2%;
+}
+
+button.Room-scoresActionBtn, button.Room-changeNameBtn {
+  font-size: 15px;
+  color: #fff;
+  background-color: #0065bd;
+  border-color: #005dae;
+  white-space: normal;
+  display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 10px 12px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+
+}
+
+button.Room-scoresActionBtn:hover, button.Room-changeNameBtn:hover {
+    color: #fff;
+    background-color: #004a8a;
+    border-color: #003c71;
+}
+
+.Room-totalsContainer {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  margin-top: 15px;
+}
+
+.Room-totalsTitle {
+  margin: 0 0 10px 0;
+}
+
+.Room-totalsTitleUnanimous {
+  color: green;
+}
+
+.Room-totalScoresTable {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+
+.Room-totalScoresTableHead {
+  border-bottom: 1px solid;
+}
+
+.Room-totalScoresTableData {
+  padding: 10px;
+}
